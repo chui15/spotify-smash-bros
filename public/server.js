@@ -19,6 +19,18 @@
       return hashParams;
     }
 
+    function getArtists(access_token, range) {
+      $.ajax({
+        url: `https://api.spotify.com/v1/me/top/artists?limit=4&offset=1&time_range=${range}`,
+        headers: {
+          'Authorization': 'Bearer ' + access_token
+        },
+        success: function(response) {
+          console.log(response.items)
+        }
+      });
+    }
+
     var params = getHashParams();
 
     var access_token = params.access_token,
@@ -47,5 +59,16 @@
           $('#login').show();
           $('#loggedin').hide();
       }
+
+      document.getElementById('short_term').addEventListener('click', function() {
+        getArtists(access_token, 'short_term');                                       
+      });
+      document.getElementById('medium_term').addEventListener('click', function() {
+        getArtists(access_token, 'medium_term');                                       
+      });
+      document.getElementById('long_term').addEventListener('click', function() {
+        getArtists(access_token, 'long_term');                                       
+      });
+
     }
   })();

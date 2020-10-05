@@ -1,6 +1,6 @@
 # Spotify Smash Bros
 
-This is a project that was inspired by [Receiptify](https://receiptify.herokuapp.com/).  It takes the user's top 4 artists from the last month, the last 6 months, or all time and displays them in the Super Smash Bros character select screen format.  This was created for fun so that I could learn how to work with Spotify's API and share something cool with my friends! 
+Spotify Smash Bros is a personal project that takes the user's top 4 artists from the last month, the last 6 months, or all time and displays them in the Super Smash Bros character select screen format.  This was created for fun so that I could learn how to work with Spotify's API and share something cool with my friends!  Disclaimer: I am not affiliated with Super Smash Bros/Nintendo or Spotify. 
 
 ## Installation
 
