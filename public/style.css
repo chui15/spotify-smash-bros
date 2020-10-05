@@ -15,7 +15,6 @@
 
 body {
     background-image: url('/smash_bg.jpg');
-    background-repeat: none;
     background-size: cover;
 }
 
@@ -50,8 +49,8 @@ body {
     vertical-align: middle;
 }
 
-.btn-select {
-    background-color: rgb(99, 198, 99);
+.btn-select, .btn-download {
+    background-color: rgb(65, 65, 65);
     color: white;
     font-size: 20px;
     display: inline-block;
@@ -60,8 +59,12 @@ body {
     margin: 20px;
 }
 
+.btn-download {
+    margin-bottom: 10px;
+}
+
 .btn-login:hover, .btn-select:hover {
-    background-color: rgb(111, 227, 111);
+    background-color: rgb(182, 182, 182);
     border-color: white;
 }
 
@@ -72,15 +75,23 @@ body {
     border-style: solid;
     border-color: whitesmoke;
     border-radius: 50px;
-    opacity: 0.96;
+    opacity: 0.98;
 }
 
-.description {
+#screen-container {
+    position: relative;
+}
+
+.description, .thanks {
     font-size: 23px;
     text-align: center;
     margin-right: 12%;
     margin-left: 12%;
     margin-bottom: 90px;
+}
+
+.thanks {
+    margin-top: 60px;
 }
 
 .select {
@@ -100,4 +111,13 @@ body {
 #ranges {
     width: 100%;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+.user-name {
+    position: absolute;
+    top: 7%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
 }
