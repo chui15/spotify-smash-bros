@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Super Smash 4.1';
+    src: url('/SuperSmash41.woff') format('woff2'),
+        url('/SuperSmash41.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Super Smash 4.1';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url('/smash_bg.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+#login, #loggedin {
+    display: none;
+  }
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+  }
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 4px 10px rgb(120, 120, 120);
+    padding: 20px;
+    font-size: 50px;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+.btn-login {
+    background-color: rgb(99, 198, 99);
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 37%;
+    vertical-align: middle;
+}
+
+.btn-select {
+    background-color: rgb(99, 198, 99);
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.btn-login:hover, .btn-select:hover {
+    background-color: rgb(111, 227, 111);
+    border-color: white;
+}
+
+.container {
+    margin-top: 3%;
+    padding: 5%;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 50px;
+    opacity: 0.96;
+}
+
+.description {
+    font-size: 23px;
+    text-align: center;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-bottom: 90px;
+}
+
+.select {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bottom {
+    font-size: 15px;
+    text-align: center;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 70px;
+}
+
+#ranges {
+    width: 100%;
+    text-align: center;
+}
