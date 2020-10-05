@@ -1,12 +1,10 @@
 # Spotify Smash Bros
 
-This is a project that was inspired by [Receiptify](https://receiptify.herokuapp.com/).  It takes the user's top 5 artists from the last month, the last 6 months, and all time and displays them in the Super Smash Bros character select screen format.  This was created for fun so that I could learn how to work with Spotify's API and share something cool with my friends! 
+This is a project that was inspired by [Receiptify](https://receiptify.herokuapp.com/).  It takes the user's top 4 artists from the last month, the last 6 months, or all time and displays them in the Super Smash Bros character select screen format.  This was created for fun so that I could learn how to work with Spotify's API and share something cool with my friends! 
 
 ## Installation
 
-These examples run on Node.js. On [its website](http://www.nodejs.org/download/) you can find instructions on how to install it. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm.
-
-Once installed, clone the repository and install its dependencies running:
+Clone the repository and install its dependencies running:
 
     $ npm install
 
