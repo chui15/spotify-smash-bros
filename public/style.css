@@ -181,10 +181,3 @@
     height: 99%;
     width: 99%;
 }
-
-.watermark {
-    position: absolute;
-    color: white;
-    font-size: 15px;
-
-}
