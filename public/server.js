@@ -26,7 +26,6 @@
           'Authorization': 'Bearer ' + access_token
         },
         success: function(response) {
-          console.log(response.items);
           $('.select').hide();
           $('#ranges').hide();
           $('#screen-container').show();
@@ -62,7 +61,6 @@
             window.scrollTo(0, 0);
             html2canvas(element, {allowTaint: true, useCORS: true}).then((canvas) => {
               var dataURL = canvas.toDataURL();
-              console.log(dataURL);
               var link = document.createElement('a');
               link.download = 'spotifysmashbros.png';
               link.href = dataURL;
