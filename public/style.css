@@ -39,22 +39,22 @@ body {
     margin-bottom: 50px;
 }
 
-.btn-login {
-    background-color: rgb(99, 198, 99);
+.btn-login, .btn-select, .btn-download {
+    background-color: rgb(25, 184, 242);
     color: white;
     font-size: 22px;
     padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
     border-radius: 20px;
     margin-left: 37%;
     vertical-align: middle;
 }
 
 .btn-select, .btn-download {
-    background-color: rgb(65, 65, 65);
-    color: white;
     font-size: 20px;
     display: inline-block;
-    border-radius: 20px;
     padding: 15px;
     margin: 20px;
 }
@@ -63,9 +63,10 @@ body {
     margin-bottom: 10px;
 }
 
-.btn-login:hover, .btn-select:hover {
-    background-color: rgb(182, 182, 182);
-    border-color: white;
+.btn-login:hover, .btn-select:hover, .btn-download:hover {
+    background-color: rgb(103, 214, 255);
+    box-shadow: 2px 2px 2px black;
+    color: white;
 }
 
 .container {
