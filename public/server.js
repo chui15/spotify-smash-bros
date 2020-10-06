@@ -46,13 +46,26 @@
           var artist3_img = data.artists[2].images[0].url;
           var artist4_img = data.artists[3].images[0].url;
 
+          if (artist1.length >= 10) {
+            $('#artist1').addClass('long-artist');
+          } 
           $('.artist-name1').text(artist1);
-          $('.artist1-img').append('<img src="' + artist1_img + '" class="artist-image" crossorigin="anonymous">');
+          if (artist2.length >= 10) {
+            $('#artist2').addClass('long-artist');
+          }
           $('.artist-name2').text(artist2);
-          $('.artist2-img').append('<img src="' + artist2_img + '" class="artist-image" crossorigin="anonymous">');
+          if (artist3.length >= 10) {
+            $('#artist3').addClass('long-artist');
+          }
           $('.artist-name3').text(artist3);
-          $('.artist3-img').append('<img src="' + artist3_img + '" class="artist-image" crossorigin="anonymous">');
+          if (artist4.length >= 10) {
+            $('#artist4').addClass('long-artist');
+          }
           $('.artist-name4').text(artist4);
+
+          $('.artist1-img').append('<img src="' + artist1_img + '" class="artist-image" crossorigin="anonymous">');
+          $('.artist2-img').append('<img src="' + artist2_img + '" class="artist-image" crossorigin="anonymous">');
+          $('.artist3-img').append('<img src="' + artist3_img + '" class="artist-image" crossorigin="anonymous">');
           $('.artist4-img').append('<img src="' + artist4_img + '" class="artist-image" crossorigin="anonymous">');
 
           document.getElementById('download').addEventListener('click', function () {
