@@ -27,14 +27,40 @@
         },
         success: function(response) {
           console.log(response.items);
+          $('.select').hide();
+          $('#ranges').hide();
           $('#screen-container').show();
           $('.thanks').show();
 
+          var data = {
+            artists: response.items,
+            json: true
+          };
+
+          var artist1 = data.artists[0].name;
+          var artist2 = data.artists[1].name;
+          var artist3 = data.artists[2].name;
+          var artist4 = data.artists[3].name;
+
+          var artist1_img = data.artists[0].images[0].url;
+          var artist2_img = data.artists[1].images[0].url;
+          var artist3_img = data.artists[2].images[0].url;
+          var artist4_img = data.artists[3].images[0].url;
+
+          $('.artist-name1').text(artist1);
+          $('.artist1-img').append('<img src="' + artist1_img + '" class="artist-image" crossorigin="anonymous">');
+          $('.artist-name2').text(artist2);
+          $('.artist2-img').append('<img src="' + artist2_img + '" class="artist-image" crossorigin="anonymous">');
+          $('.artist-name3').text(artist3);
+          $('.artist3-img').append('<img src="' + artist3_img + '" class="artist-image" crossorigin="anonymous">');
+          $('.artist-name4').text(artist4);
+          $('.artist4-img').append('<img src="' + artist4_img + '" class="artist-image" crossorigin="anonymous">');
+
           document.getElementById('download').addEventListener('click', function () {
-            var offScreen = document.querySelector('#screen-container');
+            var element = document.querySelector('#screen-container');
 
             window.scrollTo(0, 0);
-            html2canvas(offScreen).then((canvas) => {
+            html2canvas(element, {allowTaint: true, useCORS: true}).then((canvas) => {
               var dataURL = canvas.toDataURL();
               console.log(dataURL);
               var link = document.createElement('a');

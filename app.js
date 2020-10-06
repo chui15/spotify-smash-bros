@@ -9,6 +9,7 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 var config = require('./config/default.json');
+var html2canvas = require('html2canvas');
 
 var client_id = config.client_id; 
 var client_secret = config.client_secret; 
