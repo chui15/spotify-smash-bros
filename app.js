@@ -13,7 +13,7 @@ var html2canvas = require('html2canvas');
 
 var client_id = config.client_id; 
 var client_secret = config.client_secret; 
-var redirect_uri = 'https://spotify-smash-bros.web.app/';
+var redirect_uri = 'http://localhost:8888/callback';
 
 /**
  * Generates a random string containing numbers and letters
